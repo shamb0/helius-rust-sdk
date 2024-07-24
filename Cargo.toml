@@ -36,5 +36,13 @@ tokio-stream = "0.1.15"
 tokio-tungstenite = { version = "0.21.0", features = ["native-tls", "handshake"] }
 url = "2.5.0"
 
+[patch.crates-io]
+solana-account-decoder = { git = "https://github.com/shamb0/solana.git", branch = "fix-issue-919-get-transaction", package = "solana-account-decoder" }
+solana-client = { git = "https://github.com/shamb0/solana.git", branch = "fix-issue-919-get-transaction", package = "solana-client" }
+solana-program = { git = "https://github.com/shamb0/solana.git", branch = "fix-issue-919-get-transaction", package = "solana-program" }
+solana-rpc-client-api = { git = "https://github.com/shamb0/solana.git", branch = "fix-issue-919-get-transaction", package = "solana-rpc-client-api" }
+solana-sdk = { git = "https://github.com/shamb0/solana.git", branch = "fix-issue-919-get-transaction", package = "solana-sdk" }
+solana-transaction-status = { git = "https://github.com/shamb0/solana.git", branch = "fix-issue-919-get-transaction", package = "solana-transaction-status" }
+
 [dev-dependencies]
 mockito = "1.4.0"
